@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/canvas.css">
+
+  <link rel="stylesheet" href="css/lib/prism.css">
+
+  <script src="js/lib/prism.js"></script>
+
+</head>
+
+<body>
+  <div class="column-wrapper">
+    <div class='column'>
+      <p>canvas 1</p>
+      <canvas id="demo" width="800" height="400">
+        current stock price: $3.15 + 0.15
+      </canvas>
+    </div>
+    <div class="column">
+      <!-- Print syntax lib -->
+      <p>Syntax:</p>
+      <pre>
+        <code class="language-js">
+          arc(x, y, radius, startAngle, endAngle, anticlockwise)
+          ctx.arc(300, 60, 50, 0, 6, true); // Outer circle
+        </code>
+      </pre>
+      <picture id="pic">
+        <source media="(max-width: 465px)" srcset="images/clock.jpg">
+        <img src="images/arcs.png" alt="Flowers" style="width:auto;">
+      </picture>
+    </div>
+  </div>
+
+  <p>canvas 2</p>
+
+  <canvas id="clock" width="800" height="400">
+    <img src="images/clock.jpg" width="150" height="150" alt="" />
+  </canvas>
+
+  <script src="js/index.js"></script>
+  <script src="js/save-restore.js"></script>
+</body>
+
+</html>
